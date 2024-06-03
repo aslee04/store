@@ -1,0 +1,12 @@
+.parentContainer {
+    min-width: 1460px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.main {
+    background-image: url('../assets/main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
