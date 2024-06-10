@@ -1,9 +1,12 @@
 import React from 'react'
+import cn from 'classnames'
 import './button.css'
 
-const Button = ({children}) => {
+const Button = ({type = 'button', variant, className, children, ...props}) => {
   return (
-    <button type='button' className='button' id='search button'>{children}</button>
+    <button type={type} className={cn('button', className, {
+      'btn-outline': variant === 'outline'
+    })} {...props}>{children}</button>
   )
 }
 

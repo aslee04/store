@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Catalog from './pages/Catalog.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      // todo
+      {
+        // path: "Catalog",
+        // element: <Catalog />
+      }
     ]
   }
 ])
